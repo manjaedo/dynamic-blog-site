@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="ko" data-theme="light" data-theme-preset="magazine">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fbf7ef" />
+    <meta name="description" content="자바스크립트로 만든 작은 기록 공간. 글과 이미지, 영상을 담아 둡니다." />
+    <meta name="generator" content="basic-blog static export" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('basic-blog-theme');
+          var theme = saved === 'light' || saved === 'dark'
+            ? saved
+            : window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark'
+              : 'light';
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme = theme;
+        } catch (error) {
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="./assets/index-DIVDJinM.css" />
+    <title>기본 블로그 — 쓰고, 쌓고, 기록하는 블로그</title>
+  </head>
+  <body><div class="app-shell" id="top">
+    <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark" aria-hidden="true">기</span>
+        <span class="brand-text">
+          <span class="brand-title">기본 블로그</span>
+          <span class="brand-sub">Basic Blog</span>
+        </span>
+      </a>
+      <nav class="header-nav" aria-label="주요 메뉴">
+        <a class="nav-link is-active" href="./index.html">글 목록</a>
+        <button
+          type="button"
+          class="icon-button theme-toggle"
+          id="static-theme-toggle"
+          aria-label="다크 모드로 전환"
+          title="다크 모드로 전환"
+        >
+          <svg data-static-theme-icon="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+          <svg data-static-theme-icon="sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+    <main class="site-main" id="main-content">
+      <div class="home-page"><section class="hero container">
+    <div class="hero-copy">
+      <p class="hero-kicker">✳ Colorful Magazine · Basic Blog</p>
+      <h1 class="hero-title">쓰고, 쌓고,<br /><span class="hero-mark">기록하는</span><br />블로그.</h1>
+      <p class="hero-lead">자바스크립트로 만든 작은 기록 공간. 검색하고, 태그로 찾고, 이미지와 영상까지 담아 두세요.</p>
+      <div class="hero-actions">
+        <a href="#archive" class="btn btn-ghost btn-lg">글 둘러보기 <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-meta">
+        <span class="hero-status"><span class="status-dot is-online" aria-hidden="true"></span>정적 페이지</span>
+        <span class="meta-sep" aria-hidden="true">·</span>
+        <span>기록 5편</span>
+        <span class="meta-sep" aria-hidden="true">·</span>
+        <span>태그 7개</span>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="hero-blob"></div>
+      <div class="hero-poster">
+        <div class="hero-poster-top"><span>Vol. 01</span><span>✳</span></div>
+        <div class="hero-poster-title">기록</div>
+        <div class="hero-poster-bottom"><span>Basic Blog</span><span>2026</span></div>
+      </div>
+      <div class="hero-sticker">COLORFUL<br />MAGAZINE</div>
+      <div class="hero-sticker-mint">✳</div>
+    </div>
+  </section><section class="archive container" id="archive">
+    <div class="archive-head">
+      <div>
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Archive</p>
+        <h2>모든 기록</h2>
+      </div>
+      <p class="archive-note">정적 페이지에서도 검색과 태그 필터를 사용할 수 있습니다.</p>
+    </div>
+    <div class="filter-panel static-filter-panel">
+      <form class="search-form" role="search" id="static-search-form">
+        <svg class="search-icon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="m20 20-3.5-3.5"></path>
+        </svg>
+        <input
+          type="search"
+          id="static-search"
+          placeholder="제목, 본문, 태그로 검색"
+          aria-label="글 검색"
+          aria-keyshortcuts="/"
+          autocomplete="off"
+          enterkeyhint="search"
+        />
+        <kbd class="search-kbd" aria-hidden="true">/</kbd>
+      </form>
+      <div class="tag-filter" id="static-tag-filter" role="group" aria-label="태그 필터">
+        <button type="button" class="filter-chip is-active" data-tag="" aria-pressed="true">
+          전체 <span>5</span>
+        </button>
+        <button type="button" class="filter-chip" data-tag="회고" aria-pressed="false">#회고 <span>2</span></button><button type="button" class="filter-chip" data-tag="JavaScript" aria-pressed="false">#JavaScript <span>2</span></button><button type="button" class="filter-chip" data-tag="글쓰기" aria-pressed="false">#글쓰기 <span>1</span></button><button type="button" class="filter-chip" data-tag="금양이" aria-pressed="false">#금양이 <span>1</span></button><button type="button" class="filter-chip" data-tag="디자인" aria-pressed="false">#디자인 <span>1</span></button><button type="button" class="filter-chip" data-tag="CSS" aria-pressed="false">#CSS <span>1</span></button><button type="button" class="filter-chip" data-tag="React" aria-pressed="false">#React <span>1</span></button>
+      </div>
+    </div>
+    <div class="results-bar">
+      <p class="results-text" aria-live="polite">
+        전체 기록
+        <span class="results-count"><strong id="static-results-count">5</strong>편</span>
+      </p>
+    </div>
+    <article class="featured-post" data-search-item data-post-id="0f3584e3-e13a-4268-b9b0-54dbcab452d8">
+    <a class="featured-link" href="./posts/0f3584e3-e13a-4268-b9b0-54dbcab452d8.html">
+      <div class="post-cover post-cover--featured"><img src="./uploads/4310fb75-9bc2-4934-809b-b8510439ee61.webp" alt="" loading="eager" decoding="async" /></div>
+      <div class="featured-body">
+        <div class="featured-top">
+          <span class="featured-badge">Featured</span>
+          <time dateTime="2026-10-23T15:07:46.319Z">2026.10.24</time>
+        </div>
+        <div class="featured-tags"><span class="tag-pill tag-tone-4">#금양이</span></div>
+        <h2>금양이다</h2>
+        <p class="featured-excerpt">이미지와 영상으로 구성된 게시글입니다.</p>
+        <div class="featured-meta">
+          <span>1분 읽기</span>
+          <span class="featured-more">글 읽기 <span aria-hidden="true">↗</span></span>
+        </div>
+      </div>
+    </a>
+  </article>
+    <div class="post-grid"><article class="post-card" data-search-item data-post-id="d68e9213-f99a-4dbd-82e5-25edcbf9b36c">
+    <a class="post-card-link" href="./posts/d68e9213-f99a-4dbd-82e5-25edcbf9b36c.html">
+      <div class="post-cover post-cover--card"><div class="cover-art cover-tone-3" aria-hidden="true">
+        <div class="cover-art-top"><span>Basic Blog</span><span>2026</span></div>
+        <span class="cover-art-char">자</span>
+        <div class="cover-art-bottom"><span>No. 02</span><span class="cover-art-star">✳</span></div>
+      </div></div>
+      <div class="post-card-body">
+        <div class="post-card-tags"><span class="tag-pill tag-tone-1">#JavaScript</span><span class="tag-pill tag-tone-0">#회고</span></div>
+        <h3 class="post-card-title">자바스크립트로 블로그를 만들며</h3>
+        <p class="post-card-excerpt">블로그를 직접 만들면서 정한 구조와 기록 습관에 대한 첫 번째 글입니다.</p>
+        <div class="post-card-meta">
+          <time dateTime="2026-10-22T13:51:36.000Z">2026.10.22</time>
+          <span class="meta-dot" aria-hidden="true"></span>
+          <span>1분 읽기</span>
+          <span class="post-card-arrow" aria-hidden="true">↗</span>
+        </div>
+      </div>
+    </a>
+  </article><article class="post-card" data-search-item data-post-id="a15cc116-248b-438c-86c7-5231dfae7e74">
+    <a class="post-card-link" href="./posts/a15cc116-248b-438c-86c7-5231dfae7e74.html">
+      <div class="post-cover post-cover--card"><div class="cover-art cover-tone-4" aria-hidden="true">
+        <div class="cover-art-top"><span>Basic Blog</span><span>2026</span></div>
+        <span class="cover-art-char">R</span>
+        <div class="cover-art-bottom"><span>No. 03</span><span class="cover-art-star">✳</span></div>
+      </div></div>
+      <div class="post-card-body">
+        <div class="post-card-tags"><span class="tag-pill tag-tone-0">#React</span><span class="tag-pill tag-tone-1">#JavaScript</span></div>
+        <h3 class="post-card-title">React 상태 관리, 어디에 둘까?</h3>
+        <p class="post-card-excerpt">상태를 컴포넌트 가까이에 두는 이유와 서버 상태를 분리하는 기준을 정리했습니다.</p>
+        <div class="post-card-meta">
+          <time dateTime="2026-10-20T13:51:36.000Z">2026.10.20</time>
+          <span class="meta-dot" aria-hidden="true"></span>
+          <span>1분 읽기</span>
+          <span class="post-card-arrow" aria-hidden="true">↗</span>
+        </div>
+      </div>
+    </a>
+  </article><article class="post-card" data-search-item data-post-id="4152b90c-3e99-433c-9ff6-19a153b14ebf">
+    <a class="post-card-link" href="./posts/4152b90c-3e99-433c-9ff6-19a153b14ebf.html">
+      <div class="post-cover post-cover--card"><div class="cover-art cover-tone-3" aria-hidden="true">
+        <div class="cover-art-top"><span>Basic Blog</span><span>2026</span></div>
+        <span class="cover-art-char">C</span>
+        <div class="cover-art-bottom"><span>No. 04</span><span class="cover-art-star">✳</span></div>
+      </div></div>
+      <div class="post-card-body">
+        <div class="post-card-tags"><span class="tag-pill tag-tone-3">#CSS</span><span class="tag-pill tag-tone-3">#디자인</span></div>
+        <h3 class="post-card-title">CSS 다크 모드, 변수 하나로 시작하기</h3>
+        <p class="post-card-excerpt">CSS 변수만으로 라이트/다크 테마를 전환하는 방법을 단계별로 소개합니다.</p>
+        <div class="post-card-meta">
+          <time dateTime="2026-10-17T13:51:36.000Z">2026.10.17</time>
+          <span class="meta-dot" aria-hidden="true"></span>
+          <span>1분 읽기</span>
+          <span class="post-card-arrow" aria-hidden="true">↗</span>
+        </div>
+      </div>
+    </a>
+  </article><article class="post-card" data-search-item data-post-id="7c72a33e-7174-4bb5-a165-f617b73a19a6">
+    <a class="post-card-link" href="./posts/7c72a33e-7174-4bb5-a165-f617b73a19a6.html">
+      <div class="post-cover post-cover--card"><div class="cover-art cover-tone-2" aria-hidden="true">
+        <div class="cover-art-top"><span>Basic Blog</span><span>2026</span></div>
+        <span class="cover-art-char">매</span>
+        <div class="cover-art-bottom"><span>No. 05</span><span class="cover-art-star">✳</span></div>
+      </div></div>
+      <div class="post-card-body">
+        <div class="post-card-tags"><span class="tag-pill tag-tone-2">#글쓰기</span><span class="tag-pill tag-tone-0">#회고</span></div>
+        <h3 class="post-card-title">매일 쓰는 사람이 되는 다섯 가지 습관</h3>
+        <p class="post-card-excerpt">매일 쓰기 위해 줄인 마찰과 반복 가능한 루틴에 대한 메모.</p>
+        <div class="post-card-meta">
+          <time dateTime="2026-10-13T13:51:36.000Z">2026.10.13</time>
+          <span class="meta-dot" aria-hidden="true"></span>
+          <span>1분 읽기</span>
+          <span class="post-card-arrow" aria-hidden="true">↗</span>
+        </div>
+      </div>
+    </a>
+  </article></div><p class="stats-empty static-empty" id="static-empty" hidden>검색 결과가 없습니다.</p>
+  </section></div>
+    </main>
+    <footer class="site-footer">
+    <div class="footer-stripes" aria-hidden="true">
+      <span class="stripe stripe--blue"></span>
+      <span class="stripe stripe--coral"></span>
+      <span class="stripe stripe--yellow"></span>
+      <span class="stripe stripe--mint"></span>
+      <span class="stripe stripe--lilac"></span>
+    </div>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-wordmark">BASIC BLOG<span aria-hidden="true">.</span></p>
+          <p class="footer-tagline">생각을 기록하고, 다듬고, 나누는 작은 공간.<br />오늘의 문장이 내일의 글이 되도록.</p>
+        </div>
+        <nav class="footer-col" aria-label="바로가기">
+          <h2>둘러보기</h2>
+          <a href="./index.html">글 목록</a>
+          <a href="#top">맨 위로</a>
+        </nav>
+        <div class="footer-col">
+          <h2>만든 방식</h2>
+          <span>React + Vite</span>
+          <span>Node + SQLite</span>
+          <span>Static Export</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 기본 블로그</span>
+        <span class="footer-note">Static · GitHub Pages ready</span>
+        <a href="#top" class="footer-top-link">맨 위로 <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script type="application/json" id="post-search-index">[{"id":"0f3584e3-e13a-4268-b9b0-54dbcab452d8","tags":["금양이"],"haystack":"금양이다 이미지와 영상으로 구성된 게시글입니다. 금양이"},{"id":"d68e9213-f99a-4dbd-82e5-25edcbf9b36c","tags":["JavaScript","회고"],"haystack":"자바스크립트로 블로그를 만들며 블로그를 직접 만들면서 정한 구조와 기록 습관에 대한 첫 번째 글입니다. javascript 회고 안녕하세요. 드디어 이 블로그에 첫 글을 남깁니다. 거창한 플랫폼을 고르는 대신, 직접 만들고 싶은 기능만 담아 작은 블로그를 시작했습니다. 글을 쓰는 공간은 단순할수록 좋다고 생각합니다. 그래서 첫 화면에는 검색창과 최근 글, 그리고 글을 쓸 수 있는 버튼만 남겼습니다. 이 블로그에서 다룰 것들 자바스크립트와 react를 공부하며 알게 된 것 직접 만든 작은 도구들의 기록 매일 쓰는 습관과 회고 기록은 완벽해진 다음에 하는 것이 아니라, 완벽해지기 위해 하는 것입니다. 앞으로 이 공간에 꾸준히 이야기를 쌓아 보려 합니다. 긴 글이든 짧은 메모든, 일단 남기는 것이 목표입니다."},{"id":"a15cc116-248b-438c-86c7-5231dfae7e74","tags":["React","JavaScript"],"haystack":"react 상태 관리, 어디에 둘까? 상태를 컴포넌트 가까이에 두는 이유와 서버 상태를 분리하는 기준을 정리했습니다. react javascript react를 처음 배우면 모든 상태를 한곳에 모아야 할 것 같습니다. 하지만 작은 화면에서는 상태를 최대한 사용하는 곳 가까이에 두는 편이 훨씬 단순합니다. 1. 상태는 가까이에 검색어처럼 한 화면에서만 쓰는 값은 페이지 컴포넌트의 로컬 상태로 충분합니다. 전역 저장소에 넣는 순간, 필요 없는 곳까지 다시 렌더링될 가능성이 생깁니다. const [query, setquery] = usestate(''); const [page, setpage] = usestate(1); 2. 서버 상태는 따로 글 목록, 글 상세처럼 서버에서 오는 데이터는 로컬 ui 상태와 성격이 다릅니다. 로딩, 오류, 재요청, 페이지네이션을 함께 다뤄야 하므로 별도의 훅으로 분리하는 것이 좋습니다. 로컬 상태: 입력값, 모달 열림, 탭 선택 서버 상태: 글 목록, 글 상세, 태그 카운트 전역 상태는 마지막 수단으로 남겨 두면 구조가 훨씬 읽기 쉬워집니다."},{"id":"4152b90c-3e99-433c-9ff6-19a153b14ebf","tags":["CSS","디자인"],"haystack":"css 다크 모드, 변수 하나로 시작하기 css 변수만으로 라이트/다크 테마를 전환하는 방법을 단계별로 소개합니다. css 디자인 다크 모드는 색상을 전부 반대로 바꾸는 작업이 아닙니다. 배경과 글자, 테두리 같은 의미 단위를 변수로 만들고, 테마에 따라 값만 바꾸면 됩니다. 의미 있는 이름을 쓰기 --gray-100 대신 --bg , --fg , --card 처럼 역할을 기준으로 이름을 붙입니다. :root { --bg: #fbf7ef; --fg: #101014; --card: #ffffff; } [data-theme=\"dark\"] { --bg: #101016; --fg: #f7f1e6; --card: #191926; } 시스템 설정과 사용자 선택 처음에는 prefers-color-scheme 을 따르고, 사용자가 토글을 누르면 그 선택을 저장합니다. 저장된 값이 있으면 시스템 설정보다 우선합니다. 테마 상태는 data-theme 속성으로 관리 색상은 전부 css 변수로 참조 이미지와 강조색의 대비도 함께 확인 이렇게 해 두면 나중에 색을 바꿀 때도 변수 값만 수정하면 됩니다."},{"id":"7c72a33e-7174-4bb5-a165-f617b73a19a6","tags":["글쓰기","회고"],"haystack":"매일 쓰는 사람이 되는 다섯 가지 습관 매일 쓰기 위해 줄인 마찰과 반복 가능한 루틴에 대한 메모. 글쓰기 회고 글을 꾸준히 쓰는 비결은 의지력이 아니라 마찰을 줄이는 일에 가깝습니다. 최근에 효과를 본 방법을 다섯 가지로 정리해 봅니다. 1. 시작하는 의식을 짧게 노트를 열고 제목만 적는 것으로 시작합니다. 제목이 있으면 첫 문장은 자연스럽게 따라옵니다. 2. 완벽한 글을 목표로 하지 않기 초안은 일부러 거칠게 씁니다. 다듬는 일은 다음 날로 미룹니다. 3. 소재를 미리 모아 두기 걷다가 떠오른 문장, 읽은 글의 한 줄을 메모합니다. 글을 쓸 때 빈 화면을 마주할 일이 줄어듭니다. 4. 시간을 정해 두기 하루 20분처럼 작게 정합니다. 시간이 남으면 더 쓰면 되고, 부족하면 그날은 거기서 끝냅니다. 5. 남에게 보여 주기 공개한다는 사실이 마지막 문장을 완성해 줍니다. 이 블로그도 그런 이유로 만들었습니다. 꾸준함은 큰 결심보다 작은 반복에서 나옵니다."}]</script>
+  <script>
+(function () {
+  var button = document.getElementById('static-theme-toggle');
+  if (!button) return;
+
+  var root = document.documentElement;
+  var meta = document.querySelector('meta[name="theme-color"]');
+  var moon = button.querySelector('[data-static-theme-icon="moon"]');
+  var sun = button.querySelector('[data-static-theme-icon="sun"]');
+
+  function sync() {
+    var dark = root.dataset.theme === 'dark';
+    var label = dark ? '라이트 모드로 전환' : '다크 모드로 전환';
+    button.setAttribute('aria-label', label);
+    button.setAttribute('title', label);
+    if (moon) moon.style.display = dark ? 'none' : 'block';
+    if (sun) sun.style.display = dark ? 'block' : 'none';
+    if (meta) {
+      var background = getComputedStyle(root)
+        .getPropertyValue('--bg')
+        .trim();
+      if (background) meta.setAttribute('content', background);
+    }
+  }
+
+  button.addEventListener('click', function () {
+    var next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    root.dataset.theme = next;
+    root.style.colorScheme = next;
+    try {
+      localStorage.setItem('basic-blog-theme', next);
+    } catch (error) {
+      // localStorage를 사용할 수 없어도 현재 화면은 전환한다.
+    }
+    sync();
+  });
+
+  sync();
+})();
+</script>
+  <script>
+(function () {
+  var indexNode = document.getElementById('post-search-index');
+  var input = document.getElementById('static-search');
+  if (!indexNode || !input) return;
+
+  var items = [];
+  try {
+    items = JSON.parse(indexNode.textContent || '[]');
+  } catch (error) {
+    return;
+  }
+
+  var elements = Array.prototype.slice.call(
+    document.querySelectorAll('[data-search-item]')
+  );
+  var tagButtons = Array.prototype.slice.call(
+    document.querySelectorAll('#static-tag-filter [data-tag]')
+  );
+  var countNode = document.getElementById('static-results-count');
+  var emptyNode = document.getElementById('static-empty');
+  var form = document.getElementById('static-search-form');
+  var activeTag = '';
+  var composing = false;
+  var timer = 0;
+
+  function normalize(value) {
+    return String(value || '').toLocaleLowerCase('ko-KR');
+  }
+
+  function apply() {
+    var terms = normalize(input.value)
+      .trim()
+      .split(/\s+/)
+      .filter(Boolean);
+    var normalizedTag = normalize(activeTag);
+    var ids = new Set();
+    var count = 0;
+
+    items.forEach(function (item) {
+      var matchesQuery = terms.every(function (term) {
+        return item.haystack.indexOf(term) !== -1;
+      });
+      var matchesTag =
+        !normalizedTag ||
+        item.tags.some(function (tag) {
+          return normalize(tag) === normalizedTag;
+        });
+
+      if (matchesQuery && matchesTag) {
+        ids.add(item.id);
+        count += 1;
+      }
+    });
+
+    elements.forEach(function (element) {
+      element.classList.toggle(
+        'search-hidden',
+        !ids.has(element.getAttribute('data-post-id'))
+      );
+    });
+
+    if (countNode) countNode.textContent = count.toLocaleString('ko-KR');
+    if (emptyNode) emptyNode.hidden = count !== 0;
+  }
+
+  function schedule() {
+    if (composing) return;
+    window.clearTimeout(timer);
+    timer = window.setTimeout(apply, 80);
+  }
+
+  if (form) {
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      apply();
+    });
+  }
+
+  input.addEventListener('input', schedule);
+  input.addEventListener('compositionstart', function () {
+    composing = true;
+  });
+  input.addEventListener('compositionend', function () {
+    composing = false;
+    apply();
+  });
+  input.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      input.value = '';
+      apply();
+    }
+  });
+
+  tagButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      activeTag = button.getAttribute('data-tag') || '';
+      tagButtons.forEach(function (other) {
+        var active = other === button;
+        other.classList.toggle('is-active', active);
+        other.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+      apply();
+    });
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key !== '/' || event.metaKey || event.ctrlKey || event.altKey) {
+      return;
+    }
+
+    var target = event.target;
+    var tagName = target && target.tagName ? target.tagName.toLowerCase() : '';
+    if (
+      tagName === 'input' ||
+      tagName === 'textarea' ||
+      tagName === 'select' ||
+      (target && target.isContentEditable)
+    ) {
+      return;
+    }
+
+    event.preventDefault();
+    input.focus();
+  });
+
+  apply();
+})();
+</script>
+  </body>
+</html>
